@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        border: 1px solid black;
+        background-color: skyblue;
+        display: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div>강아지</div>
+    <div>고양이</div>
+    <div>사자</div>
+  </body>
+</html>
+
+<!--
+html 태그는 블록/인라인 으로 나누기 가능
+
+이걸 display 속성이라고 함
+none
+block
+inline(width, height, 여백 등 지정불가)
+inline-block(인라인처럼 줄바꿈없이 표현되지만, 블록처럼 사이즈,여백 가능)
+
+div는 기본이 block이라 새로운 라인에서 표현됨(F12 body hover시 가로칸 쭉 점령)
+
+
+
+
+position은 요소의 위치를 지정
+static  //기본
+fixed  //스크롤 생겨도 고정적인 자리, top:0; left:0이랑 같이쓰면 고정된 상단메뉴 가능
+absolute  //가장 가까운 relative 조상 기준으로 위치 정함(없으면 body 기준)
+          //fixed와 다르게, 스크롤 내리면 사라짐
+relative  //'기존의' 좌표에서 offset만큼 이동
+
+을 top,left,right,bottom과 함께 사용
+-->

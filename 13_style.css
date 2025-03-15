@@ -1,0 +1,7 @@
+.second h1 {
+  color: red;
+}
+
+.first > h1 {
+  color: blue;
+}

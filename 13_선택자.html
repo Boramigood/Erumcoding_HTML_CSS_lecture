@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="13_style.css" />
+  </head>
+  <body>
+    <div class="first">
+      <h1>firs 자식</h1>
+      <div class="second">
+        <h1>first 손자</h1>
+        <h1>second 자식</h1>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- 
+css문법에서 선택자h1와 선언부{color: red}
+
+선택자는
+전체(*)
+태그요소(h1)
+아이디(#id명)
+클래스(.class명)
+
+
+결합선택자란?
+
+first 클래스 자손들 중 h1 = .first h1
+second 클래스 자손들 중 h1 = .second h1
+
+first 클래스 자식 중 h1 = .first > h1   //손자를 제외함
+-->

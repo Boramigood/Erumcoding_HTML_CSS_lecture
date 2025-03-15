@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">이름</label>
+      <input type="text" id="name" placeholder="이름을 입력하세요" />
+      <input type="email" placeholder="이메일을 입력하세요" />
+      <input type="password" placeholder="비밀번호를 입력하세요" />
+      <input type="submit" value="회원가입" />
+    </form>
+    <label for="man">남</label>
+    <input id="man" type="radio" name="gender" />
+    <label for="woman">여</label>
+    <input id="woman" type="radio" name="gender" />
+
+    <label for="korea">한국</label>
+    <input id="korea" type="checkbox" name="subject" />
+    <label for="china">중국</label>
+    <input id="china" type="checkbox" name="subject" />
+    <label for="india">인도</label>
+    <input id="india" type="checkbox" name="subject" />
+  </body>
+</html>
+<!-- 
+form태그   //사용자의 입력을 받아, 웹서버 등으로 전송
+                //태그 사이의, 하나 이상의 input과 함께 사용   (form이 없으면 버튼 타입의 submit이 안됨)
+                //서버전송 위해서 action(데이터를 전송할 주소), method(어떤 방식으로 데이터를 서버에 전송할건지, get,post가 있음) 속성
+
+input태그   //(type/placeholder)
+	        type  //text, email, password, 버튼, 라디오, 체크박스등 컴퓨터가 알아듣게
+	        placeholder //input에 무엇을 입력해야할지 알려줌(기본값)
+
+input에서 버튼은 button,submit,reset(빈버튼,제출버튼,초기화버튼)입력으로 사용가능능
+               근데 버튼할거면 input말고 처음부터 button태그를 사용하도록 하자자(=기본적으로 submit의 기능, 이 또한 button type으로 지정가능)
+               버튼태그는 스타일이 자유로워서 많이 씀
+
+label은 input에 이름 붙혀주고, 연결도 해줌(id로 연결, 따라서 input에 id가 있어야겠지)
+
+
+
+
+단일선택: 라디오 버튼(같은 name으로 연결해줘야 양자택일이 됨)
+다중선택: 체크박스(마찬가지로 name의 활용)
+
+
+alt ctrl 방향키
+-->

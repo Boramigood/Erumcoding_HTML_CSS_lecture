@@ -1,0 +1,25 @@
+<!--
+그리드
+CSS에서 레이아웃 다루려고 쓰는거, 가로세로(플렉스) 아닌 행과 열, 표처럼 만드는데 특화됨
+마찬가지로 컨테이너/아이템 구조, display:grid로 사용
+
+
+	(컨테이너): 각 아이템들을 담고있는 div태그의, class를 따로 지정하여 container로 설정
+grid-template-rows,columns: 행,열의 갯수와 크기 지정
+비율 나타내고 싶으면 fr단위인데, 1fr 1fr 1fr을 repear(3, 1fr)로 표현가능, 또한 minmax()시 최소최대크기 지정
+auto-fill,auto-fit: 컨테이너에 들어갈 수 있는 만큼 채워짐, repeat(auto-fill, 1fr)처럼 사용
+			fill은 비어있는 셀을 만듦, fit은 남은 공간에 셀을 늘림
+gap,column-gap,row-gap: 셀 사이의 간격 지정
+grid-auto-rows,colums: template으로 지정된 행,열을 벗어난 셀의 적용 사이즈 지정
+
+justify-items: 가로정렬
+align-items: 세로정렬     //세로정렬시에는, container의 height값 설정되어있어야 함
+place-items: 단축키
+끝이 -content: 가로세로 총합이 컨테이너보다 작을 때의 정렬지정
+
+
+(아이템)
+grid-column,row-start,end: 아이템 시작과 끝, 각각 grid-column,row로 단축키 가능(슬래시로 구분), span써서 몇칸 쓸 건지 구분도 가능
+justify,align,place-self는 자기자신의 정렬지정
+order로 배치 순서 지정가능
+-->
